@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+title{
+  display: none;
+}
+.dropdown{
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin:auto;
+}
+button{
+  padding: 20px 30px;
+  width: 200px;
+  font-size: 20px;
+  border: 5px solid;
+  border-color: #3A2480;
+  font-family: fantasy;
+}
+.projects{
+  position: absolute;
+  top: 10%;
+  left: 85%;
+}
+.projects ul{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  list-style: none;
+  background-color: transparent;
+  border-radius: 5px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(10px);
+}
+.projects a{
+  color: black;
+  font-family: cursive;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+}
+.projects li:hover{
+  background-color: white;
+}
+.dropdown button{
+  border-radius: 5px;
+  cursor: pointer;
+  border: 4 px solid;
+  outline: none;
+  border-color: #3A2480;
+  text-align: center;
+}
+.dropdown button:hover{
+  color: darkgrey;
+}
+.projects button:focus + ul{
+  opacity: 1;
+  pointer-events: all;
+}
+.background-wrap{
+  position: fixed;
+  z-index: -1000;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+#video-bg-elem{
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+}
+h1{
+  font-family: monospace;
+  font-size: 80px;
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform:translateX(-50%) translateY(-50%);
+}
+h1 + h1{
+  font-family: monospace;
+  font-size: 80px;
+  position: absolute;
+  color: blue;
+  top: 55%;
+  left: 64%;
+  transform:translateX(-50%) translateY(-50%);
+  text-decoration: none;
+}
+.box{
+  position: absolute;
+  width: 640px;
+  height: 400px;
+  top: 90%;
+  left: 50%;
+  background-color: white;
+  transform:translateX(-50%) translateY(-50%);
+  border: 4px solid;
+  border-color: #3A2480;
+}
+p2{
+  font-family: fantasy;
+  font-size: 50px;
+  color: black;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform:translateX(-50%) translateY(-50%);
+}
+p3{
+  font-family: fantasy;
+  font-size: 25px;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translateX(-50%) translateY(-50%);
+}
